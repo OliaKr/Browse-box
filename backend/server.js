@@ -1,7 +1,9 @@
 const express = require("express");
-const metadataRoutes = require("./routes/matadataRoutes");
+const cors = require("cors");
+const metadataRoutes = require("./routes/metadataRoutes");
 
 const app = express();
+app.use(cors());
 app.use(express.json());
 
 app.use("/api", metadataRoutes);
