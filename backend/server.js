@@ -2,9 +2,11 @@ const express = require("express");
 const cors = require("cors");
 const metadataRoutes = require("./routes/metadataRoutes");
 const rateLimit = require("express-rate-limit");
+const helmet = require("helmet");
 
 const app = express();
 app.use(cors());
+app.use(helmet());
 app.use(express.json());
 
 const limiter = rateLimit({
