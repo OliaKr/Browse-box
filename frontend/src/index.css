@@ -9,3 +9,8 @@ body {
   padding: 2rem;
   background-color: #f8f7f3;
 }
+
+h1 {
+  font-weight: 900;
+  font-size: 3.815rem;
+}

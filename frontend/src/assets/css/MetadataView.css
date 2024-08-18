@@ -10,8 +10,10 @@
 
 .cards {
   background-color: #e3dede;
+  backdrop-filter: blur(20px);
   border-radius: 15px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(232, 230, 230, 0.3);
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -41,6 +43,7 @@
 
 .cards p:first-of-type {
   font-size: 1.8rem;
+  font-weight: 500;
   color: #333;
   margin-bottom: 1rem;
 }
