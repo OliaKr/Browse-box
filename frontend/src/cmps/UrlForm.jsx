@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../assets/css/UrlForm.css";
 
 const UrlForm = () => {
   const [urls, setUrls] = useState(["", "", ""]);
@@ -45,8 +46,12 @@ const UrlForm = () => {
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
+    <div className="form-container">
+      <h1>Find what you love: Paste your favorite url's below!</h1>
+      <form
+        onSubmit={handleSubmit}
+        className="url-form"
+      >
         {urls.map((url, index) => (
           <div key={index}>
             <input
@@ -59,6 +64,7 @@ const UrlForm = () => {
           </div>
         ))}
         <button
+          className="original-button"
           type="submit"
           disabled={loading}
         >
