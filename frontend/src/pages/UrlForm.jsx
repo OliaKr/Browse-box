@@ -1,11 +1,14 @@
 import { useState } from "react";
+// import { useNavigate } from "react-router-dom";
 import "../assets/css/UrlForm.css";
+import MetadataView from "./MetadataView";
 
 const UrlForm = () => {
   const [urls, setUrls] = useState(["", "", ""]);
   const [metadata, setMetadata] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+  // const navigate = useNavigate();
 
   const handleUrlChange = (index, value) => {
     const updatedUrls = [...urls];
@@ -40,6 +43,7 @@ const UrlForm = () => {
     const fetchedMetadata = await fetchMetadataForUrls();
     if (fetchedMetadata) {
       setMetadata(fetchedMetadata);
+      // navigate("/metadata");
     }
 
     setLoading(false);
@@ -75,7 +79,9 @@ const UrlForm = () => {
       {loading && <p>Loading metadata...</p>}
       {error && <p style={{ color: "red" }}>{error}</p>}
 
-      <div>
+      <MetadataView metadata={metadata} />
+
+      {/* <div>
         {metadata.map((data, index) => (
           <div key={index}>
             <h4>Metadata for {data.url}</h4>
@@ -90,7 +96,7 @@ const UrlForm = () => {
             )}
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };

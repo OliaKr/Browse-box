@@ -8,7 +8,7 @@
 }
 
 .url-form {
-  text-align: center; /* Center content inside this form */
+  text-align: center;
   padding: 2rem;
 }
 
@@ -19,7 +19,6 @@
   background-color: white;
   box-sizing: border-box;
   margin-bottom: 1.5rem;
-  color: white;
 }
 
 .url-form input:last-child {

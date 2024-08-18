@@ -1,19 +1,12 @@
-import { Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
+import React from "react";
+import UrlForm from "./pages/UrlForm";
 import "./App.css";
 
 function App() {
   return (
-    <>
-      <div className="app">
-        <Routes>
-          <Route
-            path="/"
-            element={<Home />}
-          />
-        </Routes>
-      </div>
-    </>
+    <div className="app">
+      <UrlForm />
+    </div>
   );
 }
 
