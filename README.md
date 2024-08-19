@@ -72,4 +72,4 @@ npm test
 - Rate limiting (max 5 requests per second).
 - Basic security (CORS, Helmet) and error handling.
 
-## Deployed at [link](https://theloverspassport.com/sea-of-stars-maldives/).
+## Deployment link [link](https://theloverspassport.com/sea-of-stars-maldives/).
