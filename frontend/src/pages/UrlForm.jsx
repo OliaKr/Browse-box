@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import MetadataView from "./MetadataView";
 import "../assets/css/UrlForm.css";
 
@@ -48,7 +48,7 @@ const UrlForm = () => {
 
   return (
     <div className="form-container">
-      <h1>Find what you love: Paste your favorite url's below!</h1>
+      <h1>Find what you love: Paste your favorite URL's below!</h1>
       <form
         onSubmit={handleSubmit}
         className="url-form"
@@ -69,11 +69,10 @@ const UrlForm = () => {
           type="submit"
           disabled={loading}
         >
-          Submit
+          {loading ? "Loading..." : "Submit"}
         </button>
       </form>
 
-      {loading && <p>Loading metadata...</p>}
       {error && <p style={{ color: "red" }}>{error}</p>}
 
       <MetadataView metadata={metadata} />
