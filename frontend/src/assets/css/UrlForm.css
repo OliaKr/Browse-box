@@ -5,7 +5,6 @@
   align-items: center;
   max-width: 150rem;
   margin: 0 auto;
-  padding-top: 4rem;
 }
 
 .url-form {
@@ -27,6 +26,9 @@
 }
 
 @media (min-width: 480px) {
+  .form-container {
+    padding-top: 4rem;
+  }
   .url-form {
     width: 100%;
     padding: 3rem;
