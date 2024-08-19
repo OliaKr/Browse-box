@@ -1,4 +1,3 @@
-// metadataController.test.js
 const request = require("supertest");
 const express = require("express");
 const metadataRoutes = require("../routes/metadataRoutes");
