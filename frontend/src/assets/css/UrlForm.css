@@ -5,6 +5,7 @@
   align-items: center;
   max-width: 150rem;
   margin: 0 auto;
+  padding-top: 4rem;
 }
 
 .url-form {
@@ -29,6 +30,7 @@
   .url-form {
     width: 100%;
     padding: 3rem;
+    margin-top: 1rem;
   }
   .url-form input {
     width: 40%;
