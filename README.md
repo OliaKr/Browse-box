@@ -62,9 +62,9 @@ npm test
 
 ## URls used
 
-[link](https://museumsvictoria.com.au/article/nemo-found-new-species-of-dancing-peacock-spider-named/).
-[link](https://www.thewholeworldisaplayground.com/visiting-rakotzbrucke-devils-bridge-germany/).
-[link](https://theloverspassport.com/sea-of-stars-maldives/).
+[Museums Victoria](https://museumsvictoria.com.au/article/nemo-found-new-species-of-dancing-peacock-spider-named/).
+[Rakotzbrucke Devil's Bridge](https://www.thewholeworldisaplayground.com/visiting-rakotzbrucke-devils-bridge-germany/).
+[The Sea of Srars Maldives](https://theloverspassport.com/sea-of-stars-maldives/).
 
 ## Security and Rate Limiting
 
@@ -72,4 +72,9 @@ npm test
 - Rate limiting (max 5 requests per second).
 - Basic security (CORS, Helmet) and error handling.
 
-## Deployment link [link](https://theloverspassport.com/sea-of-stars-maldives/).
+## Deployment
+
+- Frontend : Deployed with **AWS**.
+- Backend : Deployed with **Render**.
+
+## Deployment link [AWS](https://main.d31i8rj0bb3jlx.amplifyapp.com/).
