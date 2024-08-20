@@ -17,7 +17,7 @@ const UrlForm = () => {
   const fetchMetadataForUrls = async () => {
     try {
       const response = await fetch(
-        `${import.meta.env.VITE_API_URL}/api/fetch-metadata`,
+        "https://browse-box.onrender.com/api/fetch-metadata",
         {
           method: "POST",
           headers: {
