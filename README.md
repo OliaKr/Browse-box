@@ -77,4 +77,4 @@ npm test
 - Frontend : Deployed with **AWS**.
 - Backend : Deployed with **Render**.
 
-## Deployment link [AWS](https://main.d31i8rj0bb3jlx.amplifyapp.com/).
+## Deployment URL [AWS](https://main.d31i8rj0bb3jlx.amplifyapp.com/).
