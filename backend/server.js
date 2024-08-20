@@ -5,7 +5,23 @@ const rateLimit = require("express-rate-limit");
 const helmet = require("helmet");
 
 const app = express();
-app.use(cors());
+
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://main.d31i8rj0bb3jlx.amplifyapp.com",
+];
+
+const corsOptions = {
+  origin: function (origin, callback) {
+    if (allowedOrigins.includes(origin) || !origin) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+};
+
+app.use(cors(corsOptions));
 app.use(helmet());
 app.use(express.json());
 
